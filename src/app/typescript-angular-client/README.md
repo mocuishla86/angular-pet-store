@@ -1,5 +1,11 @@
 ## @
 
+###
+Angular 8 app that consumes Swagger Pet Store by using swagger codegen.
+
+There are some problems that can be solved using these guidelines:
+https://medium.com/sohoffice/upgrade-your-swagger-generated-angular-project-to-angular-7-a99ddb94f87c
+
 ### Building
 
 To install the required dependencies and to build the typescript sources run:
