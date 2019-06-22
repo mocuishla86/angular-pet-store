@@ -1,3 +1,6 @@
-<p>
-  Name:  Paco
+<p *ngIf="pet">
+  Name:  {{pet.name}}
+</p>
+<p *ngIf="error">
+  Error: {{error | json}}
 </p>

@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PetComponent } from './pet/pet.component';
 import { ApiModule, Configuration } from './typescript-angular-client';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ApiModule, Configuration } from './typescript-angular-client';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ApiModule.forRoot(() => new Configuration({}))
+    ApiModule.forRoot(() => new Configuration({apiKeys:{}})),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
